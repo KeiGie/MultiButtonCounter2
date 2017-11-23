@@ -22,7 +22,7 @@ class CountDataManager: NSObject {
         var dataSource: [CountData] = []
         
         for i in 1...countButtons {
-            let countData = CountData(index: i, count: 0, title: "Count \(i)", description: "Description is CountData: \(i)", image: nil)
+            let countData = CountData(index: i, count: 0, title: "Count \(i)", description: "Description is CountData: \(i)", image: UIImage(named: "sample"))
             dataSource.append(countData)
         }
         
