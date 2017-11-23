@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E26AA67F1FC6BC9100BF3D5D /* CountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA67E1FC6BC9100BF3D5D /* CountData.swift */; };
+		E26AA6821FC6BD6F00BF3D5D /* CountDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */; };
+		E26AA6861FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA6851FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift */; };
 		E29BAEE71FC6B5C800CBC0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29BAEE61FC6B5C800CBC0F4 /* AppDelegate.swift */; };
 		E29BAEE91FC6B5C800CBC0F4 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29BAEE81FC6B5C800CBC0F4 /* CountViewController.swift */; };
 		E29BAEEC1FC6B5C800CBC0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29BAEEA1FC6B5C800CBC0F4 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E26AA67E1FC6BC9100BF3D5D /* CountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountData.swift; sourceTree = "<group>"; };
+		E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDataManager.swift; sourceTree = "<group>"; };
+		E26AA6851FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		E29BAEE31FC6B5C800CBC0F4 /* MultiButtonCounter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiButtonCounter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29BAEE61FC6B5C800CBC0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29BAEE81FC6B5C800CBC0F4 /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E26AA67D1FC6BC8500BF3D5D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E26AA67E1FC6BC9100BF3D5D /* CountData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E26AA6801FC6BD4C00BF3D5D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E26AA6831FC6BD9300BF3D5D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E26AA6841FC6BDA100BF3D5D /* Count */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E26AA6841FC6BDA100BF3D5D /* Count */ = {
+			isa = PBXGroup;
+			children = (
+				E29BAEE81FC6B5C800CBC0F4 /* CountViewController.swift */,
+				E26AA6851FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift */,
+			);
+			path = Count;
+			sourceTree = "<group>";
+		};
 		E29BAEDA1FC6B5C800CBC0F4 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				E29BAEE61FC6B5C800CBC0F4 /* AppDelegate.swift */,
-				E29BAEE81FC6B5C800CBC0F4 /* CountViewController.swift */,
+				E26AA6831FC6BD9300BF3D5D /* Scene */,
+				E26AA6801FC6BD4C00BF3D5D /* Manager */,
+				E26AA67D1FC6BC8500BF3D5D /* Data */,
 				E29BAEEA1FC6B5C800CBC0F4 /* Main.storyboard */,
 				E29BAEED1FC6B5C800CBC0F4 /* Assets.xcassets */,
 				E29BAEEF1FC6B5C800CBC0F4 /* LaunchScreen.storyboard */,
@@ -137,7 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29BAEE91FC6B5C800CBC0F4 /* CountViewController.swift in Sources */,
+				E26AA67F1FC6BC9100BF3D5D /* CountData.swift in Sources */,
 				E29BAEE71FC6B5C800CBC0F4 /* AppDelegate.swift in Sources */,
+				E26AA6821FC6BD6F00BF3D5D /* CountDataManager.swift in Sources */,
+				E26AA6861FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
