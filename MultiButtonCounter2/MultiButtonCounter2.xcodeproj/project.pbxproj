@@ -10,6 +10,7 @@
 		E2213C9D1FC8F68700960347 /* CountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2213C9B1FC8F68700960347 /* CountCollectionViewCell.swift */; };
 		E2213C9E1FC8F68700960347 /* CountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2213C9C1FC8F68700960347 /* CountCollectionViewCell.xib */; };
 		E23694901FC6FCDB00823D93 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = E236948F1FC6FCDB00823D93 /* sample.png */; };
+		E26679801FC9329600EB3BED /* CountCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E266797F1FC9329600EB3BED /* CountCollectionViewFlowLayout.swift */; };
 		E26AA67F1FC6BC9100BF3D5D /* CountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA67E1FC6BC9100BF3D5D /* CountData.swift */; };
 		E26AA6821FC6BD6F00BF3D5D /* CountDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */; };
 		E26AA6861FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA6851FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift */; };
@@ -24,6 +25,7 @@
 		E2213C9B1FC8F68700960347 /* CountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2213C9C1FC8F68700960347 /* CountCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountCollectionViewCell.xib; sourceTree = "<group>"; };
 		E236948F1FC6FCDB00823D93 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		E266797F1FC9329600EB3BED /* CountCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		E26AA67E1FC6BC9100BF3D5D /* CountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountData.swift; sourceTree = "<group>"; };
 		E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDataManager.swift; sourceTree = "<group>"; };
 		E26AA6851FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountViewController+CollectionView.swift"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				E2213C9B1FC8F68700960347 /* CountCollectionViewCell.swift */,
 				E2213C9C1FC8F68700960347 /* CountCollectionViewCell.xib */,
+				E266797F1FC9329600EB3BED /* CountCollectionViewFlowLayout.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26679801FC9329600EB3BED /* CountCollectionViewFlowLayout.swift in Sources */,
 				E29BAEE91FC6B5C800CBC0F4 /* CountViewController.swift in Sources */,
 				E26AA67F1FC6BC9100BF3D5D /* CountData.swift in Sources */,
 				E2213C9D1FC8F68700960347 /* CountCollectionViewCell.swift in Sources */,

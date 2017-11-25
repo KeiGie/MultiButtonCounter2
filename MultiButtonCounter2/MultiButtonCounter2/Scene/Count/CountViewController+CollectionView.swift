@@ -26,6 +26,10 @@ extension CountViewController: UICollectionViewDelegate, UICollectionViewDataSou
         
         return cell
     }
-    
+
+}
+
+extension CountViewController: UICollectionViewDelegateFlowLayout {
+
     
 }
