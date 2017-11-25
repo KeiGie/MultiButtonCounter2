@@ -9,17 +9,20 @@
 import UIKit
 
 class CountCollectionViewFlowLayout: UICollectionViewFlowLayout {
+    
+    private struct Const {
+        static let margin: CGFloat = 20.0
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
+        itemSize = CGSize(width: collectionView!.bounds.width - (Const.margin * 2), height: collectionView!.bounds.height)
+        minimumLineSpacing = Const.margin
+        minimumInteritemSpacing = Const.margin
         scrollDirection = .horizontal
 
-        let margin: CGFloat = 10.0
-
-        itemSize = CGSize(width: 280, height: 300)
-        minimumInteritemSpacing = margin
-        minimumLineSpacing = margin
-        sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+        sectionInset = UIEdgeInsets(top: Const.margin, left: Const.margin, bottom: Const.margin, right: Const.margin)
     }
+    
 }
