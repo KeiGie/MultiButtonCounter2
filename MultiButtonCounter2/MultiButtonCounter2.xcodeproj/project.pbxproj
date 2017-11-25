@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E236948C1FC6F9F400823D93 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E236948A1FC6F9F400823D93 /* CollectionViewCell.swift */; };
-		E236948D1FC6F9F400823D93 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E236948B1FC6F9F400823D93 /* CollectionViewCell.xib */; };
+		E2213C9D1FC8F68700960347 /* CountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2213C9B1FC8F68700960347 /* CountCollectionViewCell.swift */; };
+		E2213C9E1FC8F68700960347 /* CountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2213C9C1FC8F68700960347 /* CountCollectionViewCell.xib */; };
 		E23694901FC6FCDB00823D93 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = E236948F1FC6FCDB00823D93 /* sample.png */; };
 		E26AA67F1FC6BC9100BF3D5D /* CountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA67E1FC6BC9100BF3D5D /* CountData.swift */; };
 		E26AA6821FC6BD6F00BF3D5D /* CountDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E236948A1FC6F9F400823D93 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		E236948B1FC6F9F400823D93 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		E2213C9B1FC8F68700960347 /* CountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2213C9C1FC8F68700960347 /* CountCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountCollectionViewCell.xib; sourceTree = "<group>"; };
 		E236948F1FC6FCDB00823D93 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		E26AA67E1FC6BC9100BF3D5D /* CountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountData.swift; sourceTree = "<group>"; };
 		E26AA6811FC6BD6F00BF3D5D /* CountDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDataManager.swift; sourceTree = "<group>"; };
@@ -84,8 +84,7 @@
 			children = (
 				E29BAEE81FC6B5C800CBC0F4 /* CountViewController.swift */,
 				E26AA6851FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift */,
-				E236948A1FC6F9F400823D93 /* CollectionViewCell.swift */,
-				E236948B1FC6F9F400823D93 /* CollectionViewCell.xib */,
+				E2AF8AC71FC8E19000495D69 /* CollectionView */,
 			);
 			path = Count;
 			sourceTree = "<group>";
@@ -120,6 +119,15 @@
 				E29BAEF21FC6B5C800CBC0F4 /* Info.plist */,
 			);
 			path = MultiButtonCounter2;
+			sourceTree = "<group>";
+		};
+		E2AF8AC71FC8E19000495D69 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E2213C9B1FC8F68700960347 /* CountCollectionViewCell.swift */,
+				E2213C9C1FC8F68700960347 /* CountCollectionViewCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29BAEF11FC6B5C800CBC0F4 /* LaunchScreen.storyboard in Resources */,
+				E2213C9E1FC8F68700960347 /* CountCollectionViewCell.xib in Resources */,
 				E29BAEEE1FC6B5C800CBC0F4 /* Assets.xcassets in Resources */,
-				E236948D1FC6F9F400823D93 /* CollectionViewCell.xib in Resources */,
 				E29BAEEC1FC6B5C800CBC0F4 /* Main.storyboard in Resources */,
 				E23694901FC6FCDB00823D93 /* sample.png in Resources */,
 			);
@@ -198,7 +206,7 @@
 			files = (
 				E29BAEE91FC6B5C800CBC0F4 /* CountViewController.swift in Sources */,
 				E26AA67F1FC6BC9100BF3D5D /* CountData.swift in Sources */,
-				E236948C1FC6F9F400823D93 /* CollectionViewCell.swift in Sources */,
+				E2213C9D1FC8F68700960347 /* CountCollectionViewCell.swift in Sources */,
 				E29BAEE71FC6B5C800CBC0F4 /* AppDelegate.swift in Sources */,
 				E26AA6821FC6BD6F00BF3D5D /* CountDataManager.swift in Sources */,
 				E26AA6861FC6BDBB00BF3D5D /* CountViewController+CollectionView.swift in Sources */,
@@ -345,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gmail.com-kn0825.ios.developer.MultiButtonCounter2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gmail.com-kn0825.ios.developer.MultiButtonCounter2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

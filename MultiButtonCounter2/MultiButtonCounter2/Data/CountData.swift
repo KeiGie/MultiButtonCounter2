@@ -10,13 +10,20 @@ import UIKit
 
 struct CountData {
     let id = UUID().uuidString
+    var count = 0
     
     var index: Int? = nil
-    var count = 0
     
     var title = ""
     var description: String? = nil
     
     var image: UIImage? = nil
+
+    init(index: Int, title: String, description: String?, image: UIImage?) {
+        self.index = index
+        self.title = title
+        self.description = description
+        self.image = image
+    }
 }
 

@@ -17,12 +17,11 @@ extension CountViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellId = "CountCell"
         
-        let cell: CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CollectionViewCell
+        let cell: CountCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CountCollectionViewCell
         let countData = dataSource![indexPath.row]
 
         cell.countLabel.text = String(countData.count)
         cell.titleLabel.text = countData.title
-        cell.descriptionLabel.text = countData.description
         cell.imageView.image = countData.image
         
         return cell
